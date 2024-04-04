@@ -1,10 +1,11 @@
 <script>
-import axios from "axios";
+
 import { store } from "./store";
+import MainApp from './Main/MainApp.vue'
 
 export default {
     components: {
-
+        MainApp
     },
     data() {
         return {
@@ -16,7 +17,9 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <MainApp />
+</template>
 
 <style lang="scss">
 @use "./styles/general.scss";
