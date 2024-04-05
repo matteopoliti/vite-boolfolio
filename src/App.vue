@@ -1,10 +1,12 @@
 <script>
 
 import { store } from "./store";
-import MainApp from './Main/MainApp.vue'
+import HeaderApp from './components/Header/HeaderApp.vue'
+import MainApp from './components/Main/MainApp.vue'
 
 export default {
     components: {
+        HeaderApp,
         MainApp
     },
     data() {
@@ -18,6 +20,7 @@ export default {
 </script>
 
 <template>
+    <HeaderApp />
     <MainApp />
 </template>
 
