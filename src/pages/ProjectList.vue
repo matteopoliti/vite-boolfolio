@@ -24,7 +24,7 @@ export default {
         getProjects() {
             axios.get('http://127.0.0.1:8000/api/projects')
                 .then(res => {
-                    console.log(res.data.projects)
+                    // console.log(res.data.projects)
 
                     this.arrayProjects = res.data.projects
                 })
