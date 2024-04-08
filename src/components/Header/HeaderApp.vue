@@ -5,8 +5,17 @@
         </figure>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
+                <li>
+                    <router-link :to="{ name: 'home' }" class="nav-item">
+                        Home
+                    </router-link>
+                </li>
+
+                <li>
+                    <router-link :to="{ name: 'projects' }" class="nav-item">
+                        Projects
+                    </router-link>
+                </li>
                 <li>Profile</li>
                 <li>Contacts</li>
             </ul>
@@ -50,13 +59,23 @@ header {
 
             li {
                 color: #e8f0f1;
-                list-style-type: none;
                 font-size: 24px;
                 font-weight: 700;
+                text-decoration: none;
+                list-style-type: none;
                 cursor: pointer;
 
                 &:hover {
                     color: #f9a300;
+                }
+                .nav-item{
+                    color: #e8f0f1;
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    &:hover {
+                    color: #f9a300;
+                    }
                 }
             }
         }
