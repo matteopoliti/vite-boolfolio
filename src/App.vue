@@ -2,12 +2,12 @@
 
 import { store } from "./store";
 import HeaderApp from './components/Header/HeaderApp.vue'
-import MainApp from './components/Main/MainApp.vue'
+
 
 export default {
     components: {
         HeaderApp,
-        MainApp
+        
     },
     data() {
         return {
@@ -21,7 +21,8 @@ export default {
 
 <template>
     <HeaderApp />
-    <MainApp />
+    
+    <router-view></router-view>
 </template>
 
 <style lang="scss">
