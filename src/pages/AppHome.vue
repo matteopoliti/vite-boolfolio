@@ -1,15 +1,15 @@
 <script>
-export default {
+    export default {
 
-    name: "AppHome"
-}
+        name: "AppHome"
+    }
 </script>
 
 <template>
 
     <section>
 
-        <h1 class="mt-5 mb-3">Homepage</h1>
+        <h1 class="mt-5 mb-3">HomePage</h1>
 
     </section>
 </template>
