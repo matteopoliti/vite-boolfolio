@@ -17,7 +17,11 @@
                     </router-link>
                 </li>
                 <li>Profile</li>
-                <li>Contacts</li>
+                <li>
+                    <router-link :to="{ name: 'contact-us' }" class="nav-item">
+                        Contact Us
+                    </router-link>
+                </li>
             </ul>
         </nav>
     </header>
